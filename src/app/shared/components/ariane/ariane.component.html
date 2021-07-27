@@ -1,0 +1,17 @@
+<nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+    <button class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb">Voir le fil d’Ariane</button>
+    <div class="fr-collapse" id="breadcrumb">
+    <ol class="fr-breadcrumb__list">
+        <!-- Display the parent pages, except current page -->
+       
+            <li class="fr-breadcrumb__item" *ngFor="let item of items">
+                <a [routerLink]="item?.url" class="fr-breadcrumb__link">{{item?.label}}</a>
+            </li>
+        
+        <!-- Display the current page-->
+        <li>
+            <a class="fr-breadcrumb__link" aria-current="page" *ngIf="items">{{items[items.length - 1]?.label}}</a>
+        </li>
+    </ol>
+    </div>
+</nav>

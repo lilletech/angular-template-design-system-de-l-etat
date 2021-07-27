@@ -1,0 +1,12 @@
+<div class="fr-container-fluid <%= section.cssClass %> fr-centered fr-pb-6w fr-pt-2w">
+    <div class="fr-grid-row fr-grid-row--center">
+      <div class="fr-col-6"><h2>{{title}}</h2></div>
+    </div>
+    <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutter">
+      <div class="fr-col-xs-12 fr-col-md-3 fr-p-3w" *ngFor="let part of parts">
+        <div class="fr-text--lg fr-pb-2w">{{part?.title}}</div>
+        <div class="fr-text--sm">{{part?.text}}</div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,10 @@
+<li>
+    <section class="fr-accordion">
+        <h3 class="fr-accordion__title">
+            <button class="fr-accordion__btn" aria-expanded="false" [attr.aria-controls]="'fr-accordion-'+i+'-body-'+i">{{title}}</button>
+        </h3>
+        <div class="fr-collapse" id="fr-accordion-{{i}}-body-{{i}}">
+            <ng-content></ng-content>
+        </div>
+    </section>
+</li>

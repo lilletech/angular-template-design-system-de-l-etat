@@ -1,0 +1,75 @@
+<main role="main" id="contenu">	
+<div class="fr-container fr-pb-6w fr-pt-2w">
+  <h1>Composants</h1>
+
+  <h2>Boutons</h2>
+
+  <ul class="fr-btns-group fr-btns-group--inline">
+    <li><button class="fr-btn">Bouton primaire</button></li>
+    <li><button class="fr-btn" disabled>Bouton primaire désactivé</button></li>
+    <li><button class="fr-btn fr-btn--secondary">Bouton secondaire</button></li>
+    <li><button class="fr-btn fr-btn--secondary" disabled>Bouton secondaire désactivé</button></li>
+  </ul>
+
+  <h3>Plusieurs taille</h3>
+  <ul class="fr-btns-group fr-btns-group--inline fr-btns-group--sm">
+    <li><button class="fr-btn">Taille Small</button></li>
+    <li><button class="fr-btn" disabled>primaire désactivé</button></li>
+    <li><button class="fr-btn fr-btn--secondary">secondaire</button></li>
+    <li><button class="fr-btn fr-btn--secondary" disabled>secondaire désactivé</button></li>    
+  </ul>
+  <ul class="fr-btns-group fr-btns-group--inline fr-btns-group--md">
+    <li><button class="fr-btn">Taille médium</button></li>
+    <li><button class="fr-btn" disabled>primaire désactivé</button></li>
+    <li><button class="fr-btn fr-btn--secondary">secondaire</button></li>
+    <li><button class="fr-btn fr-btn--secondary" disabled>secondaire désactivé</button></li>    
+  </ul>
+  <ul class="fr-btns-group fr-btns-group--inline fr-btns-group--lg"> 
+    <li><button class="fr-btn">Taille large</button></li>
+    <li><button class="fr-btn" disabled>primaire désactivé</button></li>
+    <li><button class="fr-btn fr-btn--secondary">secondaire</button></li>
+    <li><button class="fr-btn fr-btn--secondary" disabled>secondaire désactivé</button></li>    
+  </ul>
+
+  <h3>Avec ou sans icônes</h3>
+  <p><button class="fr-btn fr-fi-checkbox-line fr-btn--icon-left">Icône à gauche</button></p>
+  <p><button class="fr-btn fr-fi-checkbox-line fr-btn--icon-right">Icône à droite</button></p>
+  <p><button class="fr-btn fr-fi-checkbox-line" title="Icône seule"><span class="sr-only">Icône seule</span></button></p>
+
+</div>
+
+<app-section
+  title="Grilles" [parts]="parts"
+></app-section>
+
+<div class="fr-container fr-pb-6w fr-pt-2w">
+  <h2>Accordéons</h2>
+
+  <ul class="fr-accordions-group">
+    <app-accordion-item i="0" title='On peut afficher des accordéons'>
+      Qui elit in aliqua exercitation. Sint exercitation incididunt duis eu mollit sunt id dolor ullamco excepteur adipisicing deserunt. Dolore mollit ullamco laboris nulla qui ad officia. Ad deserunt ex magna esse culpa ea occaecat sit tempor.
+    </app-accordion-item>
+    <app-accordion-item i="1" title='Qui se déroulent'>
+      Là, on explique la deuxième étape.
+    </app-accordion-item>
+    <app-accordion-item i="2" title='Quand on clique dessus'>
+      Sans surprise, c'est ici la troisième étape. Qui elit in aliqua exercitation. Sint exercitation incididunt duis eu mollit sunt id dolor ullamco excepteur adipisicing deserunt. Dolore mollit ullamco laboris nulla qui ad officia. Ad deserunt ex magna esse culpa ea occaecat sit tempor.
+    </app-accordion-item>
+  </ul>
+</div>
+
+<div class="fr-container">
+  <div class="fr-grid-row fr-grid-row--gutters">
+    <div class="fr-col">
+      <h2>Cartes</h2>
+    </div>
+  </div>
+  <div class="fr-grid-row fr-grid-row--gutters">
+
+    <div class="fr-col-12 fr-col-md-3"><app-card title="Titre" description="Description" url="#"></app-card></div>
+    <div class="fr-col-12 fr-col-md-3"><app-card title="Titre" description="Description" url="#"></app-card></div>
+    <div class="fr-col-12 fr-col-md-3"><app-card title="Titre" description="Description" url="#"></app-card></div>
+    
+  </div>
+</div>
+</main>

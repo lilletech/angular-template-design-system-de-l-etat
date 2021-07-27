@@ -1,0 +1,17 @@
+<div class="fr-col-md-4 fr-mb-4v" *ngIf="'title+button'==cardType; else classic">
+    <h2 class="fr-h4" style="background-color: var(--w); color: var(--{{ color }});">
+        Titre de couleur {{ color }}
+    </h2>
+    <p>Texte foncé.</p>
+    <p class="fr-p-4v" style="background-color: var(--{{ color }}); color: var(--w);">
+        Fond alternatif de couleur {{ color }}
+    </p>
+</div>
+
+
+<ng-template #classic>
+    <div class="fr-col-md-3 fr-m-2v fr-p-4v" style="background-color: var(--{{bgColor}}); color: var(--{{fgColor}});">
+        <h2 class="fr-h4">Fond alternatif</h2>
+        <p>Ce texte est en <code>{{fgColor}}</code> sur fond <code>{{bgColor}}</code>.</p>
+    </div>
+</ng-template>
