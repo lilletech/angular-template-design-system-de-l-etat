@@ -32,7 +32,7 @@ export class AppComponent{
 
     let s = document.createElement('script');
     s.type = 'module';
-    s.src = '/@gouvfr/js/dsfr.module.min.js';
+    s.src = '/@gouvfr/dsfr/dsfr.module.min.js';
     let head = document.getElementsByTagName('head')[0];
     head.appendChild(s);
     this.script1 = s;
@@ -40,7 +40,7 @@ export class AppComponent{
     s = document.createElement('script');
     s.type = 'text/javascript';
     s.noModule = true;
-    s.src = '/@gouvfr/js/dsfr.nomodule.min.js';
+    s.src = '/@gouvfr/dsfr/dsfr.nomodule.min.js';
     head = document.getElementsByTagName('head')[0];
     head.appendChild(s);
     this.script2 = s;
